@@ -176,7 +176,7 @@ When an HTTP response error occurs, the SDK logs the complete response body at D
 #### Affected Location
 
 - **File**: `src/Client.ts`
-- **Line(s)**: 305-307
+- **Line(s)**: 303-308
 - **Function/Method**: `request()`
 - **Component**: Client HTTP request handler
 
