@@ -14,7 +14,16 @@
     "octokit",
     "printf",
     "is_toggleable",
-    "typecheck"
+    "typecheck",
+    "undici",
+    "OWASP",
+    "GHSA",
+    "vmph",
+    "vghf",
+    "xmlbuilder",
+    "DAST",
+    "Mitigations",
+    "SSRF"
   ],
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
