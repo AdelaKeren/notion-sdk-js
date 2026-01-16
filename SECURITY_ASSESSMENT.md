@@ -74,8 +74,8 @@
 
 The `validator` package (≤13.15.20) has two known vulnerabilities:
 
-1. URL validation bypass vulnerability in its `isURL` function (GHSA-9965-vmph-33xx)
-2. Incomplete filtering of special elements (GHSA-vghf-hv5q-vc2g)
+1. URL validation bypass vulnerability in its `isURL` function (GHSA-9965-vmph-33xx) - allows malicious URLs to bypass validation checks, potentially enabling phishing or SSRF attacks
+2. Incomplete filtering of special elements (GHSA-vghf-hv5q-vc2g) - allows certain special characters to bypass input sanitization
 
 #### Affected Location
 
@@ -167,7 +167,7 @@ npm audit fix --force
 **CVSS Score**: 2.0 (CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:L/I:N/A:N)
 **CWE Classification**: CWE-532: Insertion of Sensitive Information into Log File
 **OWASP Category**: A09:2021 - Security Logging and Monitoring Failures
-**Confidence Level**: POTENTIAL
+**Confidence Level**: CONFIRMED
 
 #### Description
 
@@ -222,7 +222,7 @@ Consider adding documentation to warn users about logging sensitive data when en
 **CVSS Score**: 3.1 (CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N)
 **CWE Classification**: CWE-502: Deserialization of Untrusted Data
 **OWASP Category**: A08:2021 - Software and Data Integrity Failures
-**Confidence Level**: POTENTIAL
+**Confidence Level**: CONFIRMED
 
 #### Description
 
@@ -369,7 +369,7 @@ The SDK has no production dependencies, which is an excellent security posture. 
   "codebase_stats": {
     "source_files": 9,
     "test_files": 3,
-    "lines_of_code_analyzed": "~3500",
+    "lines_of_code_analyzed": 7094,
     "production_dependencies": 0,
     "development_dependencies": 12
   }
